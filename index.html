@@ -1,0 +1,19 @@
+<script type="text/javascript">
+function changeText0(){
+ var rezultat = 1;
+ rezultat *= parseFloat(document.getElementById('a').value);
+ rezultat *= parseFloat(document.getElementById('b').value);
+ if(rezultat<0){
+	document.getElementById("resultat").innerHTML = 'Калькулятор не может распознать число. Проверьте его, пожалуйста';
+	return;
+}
+else{ 
+ document.getElementById('rezultat').innerHTML = rezultat;
+}
+}
+</script>
+<form onsubmit="return false;" oninput="changeText0()">Цена товара
+<input id="a" type="number"> Кол-во товара <input id="b" type="number">  
+Итого: <output id="rezultat"></output>
+</form>
+</form>
